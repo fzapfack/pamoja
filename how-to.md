@@ -1,0 +1,46 @@
+# Setup env
+(node v8.1.2 & npm 5.4.2)
+
+## new npm init
+
+npm init -y
+npm install vue --save
+intall webpack, gulp, ...
+
+## vue-cli
+npm install -g @vue/cli
+
+vue create front
+(choose default settings)
+(use npm)
+
+cd front
+npm run serve
+
+## CSS
+
+npm install bulma --save
+npm install node-sass sass-loader style-loader --save-dev
+
+### font-awesome
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/vue-fontawesome
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+
+### Particles
+https://www.npmjs.com/package/vue-particles
+
+
+# Firebase
+
+## auth
+follow https://medium.com/@michaljurkowski/how-to-make-basic-authentication-in-vue-js-using-google-firebase-e3ec7dad274
+
+https://www.codedodle.com/2017/02/implementing-firebase-authentication.html
+
+npm install vuex firebase firebaseui --save
+
+## Install
+npm install --save firebase

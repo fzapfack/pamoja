@@ -1,0 +1,93 @@
+
+// ==========================================================================
+// Color variables
+// ==========================================================================
+
+$white: #fff;
+$smoke-white: #fcfcfc;
+$grey-white: #f2f2f2;
+
+$primary: #4FC1EA;
+$secondary: #F39200;
+$accent: #00efb7;
+
+$fade-grey: #ededed;
+$light-grey: #EFF4F7;
+$title-grey: #A9ABAC;
+$blue-grey: #444F60;
+$muted-grey: #999;
+$light-blue-grey: #98a9c3;
+$medium-grey: #66676b;
+$basaltic-grey: #878787;
+$purple: #7F00FF;
+$mint: #11FFBD;
+$bloody: #FC354C;
+$pinky: #ff00cc;
+$frost: #004e92;
+$placeholder: #cecece;
+$dark-grey: #344258;
+$border-grey: #ccc;
+$muted-grey: #999;
+$section-grey: #fbfbfb;
+
+
+$navbar-height: 10rem
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 40px
+$desktop: 1000px !default
+// 1152px container + 40px
+$widescreen: 1192px !default
+$widescreen-enabled: true !default
+// 1344px container + 40px
+$fullhd: 1384px !default
+
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet), print
+    @content
+
+=tablet-only
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=desktop-only
+  @if $widescreen-enabled
+    @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+      @content
+
+=until-widescreen
+  @if $widescreen-enabled
+    @media screen and (max-width: $widescreen - 1px)
+      @content
+
+=widescreen
+  @if $widescreen-enabled
+    @media screen and (min-width: $widescreen)
+      @content
+
+=widescreen-only
+  @if $widescreen-enabled and $fullhd-enabled
+    @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px)
+      @content
+
+=until-fullhd
+  @if $fullhd-enabled
+    @media screen and (max-width: $fullhd - 1px)
+      @content
+
+=fullhd
+  @if $fullhd-enabled
+    @media screen and (min-width: $fullhd)
+      @content
