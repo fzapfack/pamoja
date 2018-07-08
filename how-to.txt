@@ -41,6 +41,12 @@ follow https://medium.com/@michaljurkowski/how-to-make-basic-authentication-in-v
 https://www.codedodle.com/2017/02/implementing-firebase-authentication.html
 
 npm install vuex firebase firebaseui --save
-
-## Install
 npm install --save firebase
+
+## Hosting
+npm install -g firebase-tools
+firebase init
+
+### Deploy
+npm run build
+

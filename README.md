@@ -1,7 +1,6 @@
-# Pamoja
+# Pamoja [Work in progess]
 
-[Work in progess]
-Crowd-investing platform for Aficans 
+Crowd-investing platform for Africans 
 
 Project built using VueJS and Firebase
 
