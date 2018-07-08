@@ -49,7 +49,7 @@ const auth = {
             }
           },
           firebase.auth.TwitterAuthProvider.PROVIDER_ID, // Twitter does not support scopes.
-          firebase.auth.EmailAuthProvider.PROVIDER_ID
+          // firebase.auth.EmailAuthProvider.PROVIDER_ID
       ]
     }
     this.ui = new firebaseui.auth.AuthUI(firebase.auth());

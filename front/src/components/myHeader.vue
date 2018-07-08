@@ -28,7 +28,7 @@
                     <span class="icon">
                       <font-awesome-icon icon="user" />
                     </span>
-                    <span>Login</span>
+                    <span v-if="!isLogged">Login</span>
                   </router-link>
                 </p>
               </div>
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+console.log(this.$store.isLogged)
 export default {
   name: 'myHeader',
   data: function() {
@@ -51,6 +52,14 @@ export default {
   methods: {
     toggleNav: function() {
       this.isActive = !this.isActive;
+    }
+  },
+  computed: {
+    isLogged () {
+      return this.$store.isLogged
+    },
+    user () {
+      return this.$store.user
     }
   }
 }

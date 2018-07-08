@@ -44,11 +44,6 @@ export default {
     return {
       isActive: false
     }
-  },
-  methods: {
-    login_fb: function() {
-      this.$router.replace('/faq')
-    }
   }
 }
 </script>

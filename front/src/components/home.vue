@@ -2,7 +2,7 @@
   <section class="section is-primary is-bold is-hero home" id="hero">
     <div class="hero-body to-center">
       <div class="container has-text-centered" style="color:white">
-        <img src="../assets/logo_vertical.png" alt="Name of the project">
+        <img src="../assets/logo_vertical.png" alt="pamoja crowdinvesting platform">
         <h2 class="subtitle">
           Investing platform by Africans for Africans
         </h2>
